@@ -1,5 +1,5 @@
 <template>
-  <v-container class="border">
+  <v-container>
     <v-file-input
       accept=".json"
       label="File input"
@@ -22,6 +22,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useAppStore } from '@/stores/app'
 
 const data = []
 const dataOK = ref(false)
@@ -41,8 +42,14 @@ const readJson = (event) => {
 }
 
 const checkData = () => {
-  console.log(data)
-  dataOK.value = true
+  if (data.length !== 0) {
+    console.log(data[0])
+    useAppStore.data = data[0]
+    dataOK.value = true
+  }
+  else {
+    alert('請上傳資料')
+  }
 }
 </script>
 

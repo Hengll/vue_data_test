@@ -1,5 +1,8 @@
 <template>
   <v-container>
-    <h1>換頁</h1>
+    <v-data-table :items="useAppStore.data" />
   </v-container>
 </template>
+<script setup>
+import { useAppStore } from '@/stores/app'
+</script>
