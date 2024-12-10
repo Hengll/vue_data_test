@@ -13,7 +13,7 @@
     </v-btn>
     <v-btn
       v-if="dataOK"
-      @click="$router.push('/datachat')"
+      @click="$router.push('/dataView')"
     >
       開始
     </v-btn>
@@ -44,7 +44,7 @@ const readJson = (event) => {
 const checkData = () => {
   if (data.length !== 0) {
     console.log(data[0])
-    useAppStore.data = data[0]
+    useAppStore().data = data[0]
     dataOK.value = true
   }
   else {
