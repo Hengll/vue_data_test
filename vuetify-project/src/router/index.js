@@ -32,8 +32,8 @@ router.isReady().then(() => {
   localStorage.removeItem('vuetify:dynamic-reload')
 })
 
-router.afterEach(() => {
-  document.title='資料測試'
+router.afterEach((to) => {
+  document.title = to.meta.title  + ' | 資料測試'
 })
 
 export default router

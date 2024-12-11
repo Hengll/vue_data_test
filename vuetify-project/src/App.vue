@@ -16,7 +16,11 @@
       width="180"
     >
       <v-list-item
-        to="/dataViews"
+        to="/"
+        title="資料上傳"
+      />
+      <v-list-item
+        to="/dataView"
         title="資料預覽"
       />
       <v-list-item
@@ -30,5 +34,3 @@
   </v-app>
 </template>
 
-<script setup>
-</script>

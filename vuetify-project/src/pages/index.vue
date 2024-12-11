@@ -5,6 +5,7 @@
       label="File input"
       @change="readJson($event)"
     />
+    <v-text-field />
     <v-btn
       value="data"
       @click="checkData"
@@ -22,7 +23,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useAppStore } from '@/stores/app'
+import { useDataStore } from '@/stores/data'
 
 const data = []
 const dataOK = ref(false)
@@ -44,7 +45,7 @@ const readJson = (event) => {
 const checkData = () => {
   if (data.length !== 0) {
     console.log(data[0])
-    useAppStore().data = data[0]
+    useDataStore().data = data[0]
     dataOK.value = true
   }
   else {
@@ -53,3 +54,10 @@ const checkData = () => {
 }
 </script>
 
+<route lang="json">
+  {
+    "meta": {
+      "title": "資料上傳"
+    }
+  }
+</route>
