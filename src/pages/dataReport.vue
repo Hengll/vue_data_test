@@ -16,10 +16,10 @@ const datas = useDataStore()
 
 const dataForBarChart = computed(() => {
   return {
-    labels: datas.dataSelect[0].data.map(row => row.district),
+    labels: datas.dataSelect.data.map(row => row.district),
     datasets: [{
       label: '圖例',
-      data: datas.dataSelect[0].data.map(row => row.death)
+      data: datas.dataSelect.data.map(row => row.death)
     }]
   }
 })

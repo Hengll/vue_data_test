@@ -1,10 +1,10 @@
 <template>
   <v-container fluid>
     <h1 class=" text-center">
-      {{ datas.dataSelect[0].dataTitle }}
+      {{ datas.dataSelect.dataTitle }}
     </h1>
     <v-data-table
-      :items="datas.dataSelect[0].data"
+      :items="datas.dataSelect.data"
       height="600"
       fixed-header
     />

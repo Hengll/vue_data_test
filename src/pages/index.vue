@@ -73,7 +73,7 @@ const readJson = (event) => {
 
 const checkData = () => {
   if (data.length !== 0) {
-    console.log(data[0])
+    // console.log(data[0])
     datas.addData(data[0], input.value)
     alert('上傳資料成功')
   }

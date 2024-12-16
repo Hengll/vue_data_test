@@ -5,7 +5,10 @@ export const useDataStore = defineStore('data', {
   state: () => {
     return {
       dataArray: [],
-      dataSelect: []
+      dataSelect:{
+        data: [],
+        dataTitle:''
+      }
     }
   },
   actions: {
