@@ -12,9 +12,9 @@
         <v-list-item to="/" title="首頁" />
         <v-list-item to="/dataUpload" title="資料上傳" />
         <v-list-item to="/dataView" title="資料預覽" />
-        <v-list-group value="資料圖表">
+        <v-list-group value="資料圖表" fluid="true">
           <template #activator="{ props }">
-            <v-list-item v-bind="props" title="資料圖表" to="/dataReport" />
+            <v-list-item class="text-center" v-bind="props" title="資料圖表" to="/dataReport" />
           </template>
 
           <v-list-item title="圖1" />
