@@ -33,7 +33,7 @@ router.isReady().then(() => {
 })
 
 router.afterEach((to) => {
-  document.title = to.meta.title  + ' | 資料測試'
+  document.title = to.meta.title + ' | 資料測試'
 })
 
 export default router
