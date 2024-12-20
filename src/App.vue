@@ -8,13 +8,19 @@
       </v-container>
     </v-app-bar>
     <v-navigation-drawer class="text-center" permanent width="160">
-      <v-list>
+      <v-list open-strategy="list">
         <v-list-item to="/" title="首頁" />
         <v-list-item to="/dataUpload" title="資料上傳" />
         <v-list-item to="/dataView" title="資料預覽" />
-        <v-list-group value="資料圖表" fluid="true">
+        <v-list-group fluid>
           <template #activator="{ props }">
-            <v-list-item class="text-center" v-bind="props" title="資料圖表" to="/dataReport" />
+            <!-- to="/dataReport"  -->
+            <v-list-item
+              class="text-center"
+              v-bind="props"
+              title="資料圖表"
+              @click="todataReport"
+            />
           </template>
 
           <v-list-item title="圖1" />
@@ -22,9 +28,7 @@
           <v-list-item title="圖3" />
         </v-list-group>
         <v-list-item to="/dataCanvas" title="圖表畫布" />
-        <v-list-item>
-          <h1>{{ time }}</h1>
-        </v-list-item>
+        <div id="box1" class="box1">box1</div>
       </v-list>
     </v-navigation-drawer>
     <v-main>
@@ -34,11 +38,24 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+// import { ref } from 'vue'
+import router from './router'
 
-const time = ref(0)
-
-setInterval(() => {
-  time.value++
-}, 500)
+const todataReport = () => {
+  router.push('/dataReport')
+}
 </script>
+
+<style lang="scss">
+.v-list-item__spacer {
+  display: none;
+}
+
+#box1 {
+  color: red;
+}
+
+.box1 {
+  color: yellow;
+}
+</style>
