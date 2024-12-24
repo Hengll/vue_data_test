@@ -27,10 +27,25 @@
               @click="$router.push('/dataReport')"
             />
           </template>
-
-          <v-list-item title="圖1" />
-          <v-list-item title="圖2" />
-          <v-list-item title="圖3" />
+          <!-- https://play.vuetifyjs.com/#eNqtVcGO0zAQ/ZUhl+5Km2YlblFbQAgOCCQkJC6Ug2u7jYtrW7aTXVT13xk7SZu4YQGxPTTO85vxzPjN5Nsxc5YWb4yZNzXPymzh+cFI4vlqrQAWTDRAJXFuuc48f/Q55cpzu87iNhKa/MBVDfjQjEtkhdd1BiWV2vFcq5xqtFBoKQX9gYQtkY4jQ2pKvNAKIa7Y2SP67ENAr05qXxLqRUO8tkg9grHaODgNDGIYG6+AahlJQjGx03gGwrhGJBqhCXwK0RIHn7XRDbewKKLp5fBiUIAz2OSUWAYHofIHwXyFHl/e36chSOH8ADljuUCfQxwwCW4w65xgXiSEXHlvXFkUlKlwE15sf+7dnOpDIQ5kx12x15Wa781unY09uXrjhZccfbzXtWKYk97C19ZFSu6ZH9AZfOQC2WPKKPypqzAh7ITV1z9FIaig1c6WNPAKZlFClrMZlDCbpdGFn0C5BBUxkVecWD/FaYgVRPlOklOM1xexNbCEF/i4pq3Su59QwBAeXObw3jt8IJdYD+ycUN54SL9OKE/qJY0KL+BBeFqlWQw7zzmUynWifVuY2ho5sS/JJjp4p8hGcuj8YLukxAqzyBn3REg33otptgE+WbXny7YSyk+E+I+5/sbL/yf6J3mEeZKHwaaVSzXgDKGdcrrlVeHCtEvb4KL6OJKX0E3aFbwlinJ5NesmJqexOG4szo2/9z6uzxfS8LQu4zMDMpl9v9F/WvA1HNV+iArsIVwl43nhqBWmbSL+aLT1wPiW1NLDsfXCcL6WcHMLyxXcdBhg7E0J3tb8rkfCSWWb0wCLjZDCUTMj89NtXJxCfOeIstOdqqWMf99/AXL8H6E= -->
+          <v-list-item
+            prepend-icon="mdi-plus"
+            class="user-select-none"
+            title="長條圖"
+            @click="console.log('1')"
+          />
+          <v-list-item
+            prepend-icon="mdi-plus"
+            class="user-select-none"
+            title="圖2"
+            @click="console.log('2')"
+          />
+          <v-list-item
+            prepend-icon="mdi-plus"
+            class="user-select-none"
+            title="圖3"
+            @click="console.log('3')"
+          />
         </v-list-group>
         <v-list-item to="/dataCanvas" title="圖表畫布" />
       </v-list>
@@ -46,5 +61,9 @@
 <style scoped lang="scss">
 :deep(.v-list-item__spacer) {
   display: none;
+}
+
+.user-select-none {
+  user-select: none;
 }
 </style>

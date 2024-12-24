@@ -8,14 +8,23 @@ export const useDataStore = defineStore('data', {
       dataSelect: {
         data: [],
         dataTitle: '',
+        dataAttribute: [],
+        tables: [],
       },
     }
   },
   actions: {
     addData(newdata, newdataTile) {
+      const dataAttribute = []
+      Object.keys(newdata[0]).forEach((val) => {
+        dataAttribute.push(val)
+      })
+
       this.dataArray.push({
         data: newdata,
         dataTitle: newdataTile,
+        dataAttribute: dataAttribute,
+        tables: [],
       })
     },
     selectData(select) {
@@ -23,6 +32,12 @@ export const useDataStore = defineStore('data', {
         if (val.dataTitle === select) {
           this.dataSelect = val
         }
+      })
+    },
+    addTable(componentName, selectAttribute) {
+      this.dataSelect.tables.push({
+        componentName: componentName,
+        selectAttribute: selectAttribute,
       })
     },
   },
