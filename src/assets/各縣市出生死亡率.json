@@ -1,0 +1,263 @@
+[
+  {
+    "district": "板橋區",
+    "moving_in": "1663",
+    "moving_out": "1420",
+    "birth": "148",
+    "death": "358",
+    "marriage_registration": "190",
+    "divorce_registration": "85"
+  },
+  {
+    "district": "三重區",
+    "moving_in": "1240",
+    "moving_out": "1118",
+    "birth": "106",
+    "death": "252",
+    "marriage_registration": "135",
+    "divorce_registration": "59"
+  },
+  {
+    "district": "中和區",
+    "moving_in": "1332",
+    "moving_out": "1351",
+    "birth": "112",
+    "death": "288",
+    "marriage_registration": "130",
+    "divorce_registration": "63"
+  },
+  {
+    "district": "永和區",
+    "moving_in": "840",
+    "moving_out": "785",
+    "birth": "46",
+    "death": "153",
+    "marriage_registration": "53",
+    "divorce_registration": "35"
+  },
+  {
+    "district": "新莊區",
+    "moving_in": "1257",
+    "moving_out": "1142",
+    "birth": "150",
+    "death": "243",
+    "marriage_registration": "163",
+    "divorce_registration": "56"
+  },
+  {
+    "district": "新店區",
+    "moving_in": "1219",
+    "moving_out": "877",
+    "birth": "61",
+    "death": "212",
+    "marriage_registration": "124",
+    "divorce_registration": "54"
+  },
+  {
+    "district": "土城區",
+    "moving_in": "848",
+    "moving_out": "641",
+    "birth": "69",
+    "death": "139",
+    "marriage_registration": "62",
+    "divorce_registration": "38"
+  },
+  {
+    "district": "蘆洲區",
+    "moving_in": "582",
+    "moving_out": "583",
+    "birth": "65",
+    "death": "110",
+    "marriage_registration": "73",
+    "divorce_registration": "35"
+  },
+  {
+    "district": "樹林區",
+    "moving_in": "524",
+    "moving_out": "566",
+    "birth": "63",
+    "death": "126",
+    "marriage_registration": "76",
+    "divorce_registration": "24"
+  },
+  {
+    "district": "鶯歌區",
+    "moving_in": "319",
+    "moving_out": "282",
+    "birth": "33",
+    "death": "50",
+    "marriage_registration": "26",
+    "divorce_registration": "9"
+  },
+  {
+    "district": "三峽區",
+    "moving_in": "319",
+    "moving_out": "287",
+    "birth": "39",
+    "death": "78",
+    "marriage_registration": "35",
+    "divorce_registration": "24"
+  },
+  {
+    "district": "淡水區",
+    "moving_in": "1075",
+    "moving_out": "522",
+    "birth": "60",
+    "death": "126",
+    "marriage_registration": "55",
+    "divorce_registration": "24"
+  },
+  {
+    "district": "汐止區",
+    "moving_in": "727",
+    "moving_out": "600",
+    "birth": "42",
+    "death": "126",
+    "marriage_registration": "71",
+    "divorce_registration": "46"
+  },
+  {
+    "district": "瑞芳區",
+    "moving_in": "54",
+    "moving_out": "122",
+    "birth": "7",
+    "death": "49",
+    "marriage_registration": "11",
+    "divorce_registration": "6"
+  },
+  {
+    "district": "五股區",
+    "moving_in": "440",
+    "moving_out": "375",
+    "birth": "29",
+    "death": "71",
+    "marriage_registration": "28",
+    "divorce_registration": "26"
+  },
+  {
+    "district": "泰山區",
+    "moving_in": "320",
+    "moving_out": "284",
+    "birth": "32",
+    "death": "44",
+    "marriage_registration": "27",
+    "divorce_registration": "22"
+  },
+  {
+    "district": "林口區",
+    "moving_in": "720",
+    "moving_out": "379",
+    "birth": "48",
+    "death": "58",
+    "marriage_registration": "62",
+    "divorce_registration": "24"
+  },
+  {
+    "district": "八里區",
+    "moving_in": "168",
+    "moving_out": "165",
+    "birth": "14",
+    "death": "29",
+    "marriage_registration": "13",
+    "divorce_registration": "11"
+  },
+  {
+    "district": "深坑區",
+    "moving_in": "77",
+    "moving_out": "79",
+    "birth": "4",
+    "death": "15",
+    "marriage_registration": "10",
+    "divorce_registration": "5"
+  },
+  {
+    "district": "石碇區",
+    "moving_in": "14",
+    "moving_out": "18",
+    "birth": "0",
+    "death": "9",
+    "marriage_registration": "1",
+    "divorce_registration": "1"
+  },
+  {
+    "district": "坪林區",
+    "moving_in": "14",
+    "moving_out": "9",
+    "birth": "2",
+    "death": "6",
+    "marriage_registration": "0",
+    "divorce_registration": "0"
+  },
+  {
+    "district": "三芝區",
+    "moving_in": "63",
+    "moving_out": "63",
+    "birth": "6",
+    "death": "20",
+    "marriage_registration": "4",
+    "divorce_registration": "0"
+  },
+  {
+    "district": "石門區",
+    "moving_in": "14",
+    "moving_out": "29",
+    "birth": "1",
+    "death": "17",
+    "marriage_registration": "3",
+    "divorce_registration": "1"
+  },
+  {
+    "district": "金山區",
+    "moving_in": "50",
+    "moving_out": "46",
+    "birth": "11",
+    "death": "10",
+    "marriage_registration": "4",
+    "divorce_registration": "5"
+  },
+  {
+    "district": "萬里區",
+    "moving_in": "45",
+    "moving_out": "55",
+    "birth": "3",
+    "death": "17",
+    "marriage_registration": "4",
+    "divorce_registration": "2"
+  },
+  {
+    "district": "平溪區",
+    "moving_in": "7",
+    "moving_out": "15",
+    "birth": "1",
+    "death": "5",
+    "marriage_registration": "1",
+    "divorce_registration": "1"
+  },
+  {
+    "district": "雙溪區",
+    "moving_in": "14",
+    "moving_out": "22",
+    "birth": "2",
+    "death": "13",
+    "marriage_registration": "1",
+    "divorce_registration": "1"
+  },
+  {
+    "district": "貢寮區",
+    "moving_in": "16",
+    "moving_out": "20",
+    "birth": "3",
+    "death": "10",
+    "marriage_registration": "0",
+    "divorce_registration": "4"
+  },
+  {
+    "district": "烏來區",
+    "moving_in": "23",
+    "moving_out": "26",
+    "birth": "2",
+    "death": "2",
+    "marriage_registration": "0",
+    "divorce_registration": "1"
+  }
+]
