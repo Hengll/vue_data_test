@@ -3,13 +3,13 @@
     <v-row>
       <v-col class="border" cols="12">
         <h1 class="text-center">資料上傳</h1>
-        <v-file-input accept=".json" label="資料上傳" @change="readJson($event)" />
-        <v-text-field v-model="input" prepend-icon="mdi-rename" label="資料名稱" />
+        <v-file-input accept=".json" label="資料上傳" @change="readJson($event)"></v-file-input>
+        <v-text-field v-model="input" prepend-icon="mdi-rename" label="資料名稱"></v-text-field>
         <v-btn value="data" @click="checkData"> 確認上傳 </v-btn>
       </v-col>
       <v-col class="border mt-5" cols="12">
         <h1 class="text-center">資料選擇</h1>
-        <v-select v-model="select" label="Select" :items="dataNames" />
+        <v-select v-model="select" label="Select" :items="dataNames"></v-select>
         <v-btn to="/dataView" @click="datas.selectData(select)"> 開始 </v-btn>
       </v-col>
     </v-row>
