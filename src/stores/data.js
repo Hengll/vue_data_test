@@ -34,9 +34,10 @@ export const useDataStore = defineStore('data', {
         }
       })
     },
-    addTable(componentName, selectAttribute) {
+    addTable(componentName, tableName, selectAttribute) {
       this.dataSelect.tables.push({
         componentName: componentName,
+        tableName: tableName,
         selectAttribute: selectAttribute,
       })
     },

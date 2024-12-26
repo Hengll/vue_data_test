@@ -1,14 +1,16 @@
 <template>
   <h1 class="text-center">圖表</h1>
+  <v-btn @click="console.log(datas.dataSelect.tables)">test tables</v-btn>
   <!-- <BarChart :chart-data="dataForBarChart"> Chart couldn't be loaded. </BarChart> -->
   <v-container ref="content" fluid> </v-container>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref } from 'vue'
 import { useDataStore } from '@/stores/data'
 const datas = useDataStore()
-console.log(datas)
+const content = ref(null)
+// console.log(datas)
 
 // const dataForBarChart = computed(() => {
 //   return {
