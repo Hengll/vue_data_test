@@ -22,7 +22,7 @@ import { useDataStore } from '@/stores/data'
 
 const datas = useDataStore()
 const data = []
-const input = ref('dataname01')
+const input = ref('')
 const select = ref('')
 
 const readJson = (event) => {
@@ -32,6 +32,7 @@ const readJson = (event) => {
   data.splice(0)
   fileReader.onload = function () {
     data.push(JSON.parse(fileReader.result))
+    input.value = file.name.replace('.json', '')
   }
 
   fileReader.onerror = function () {
