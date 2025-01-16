@@ -4,18 +4,22 @@
   <!-- <BarChart :chart-data="dataForBarChart"> Chart couldn't be loaded. </BarChart> -->
   <v-container ref="content" fluid>
     <template v-for="table in datas.dataSelect.tables" :key="table">
-      <BarChart v-if="table.componentName === '長條圖'" :chart-data="dataForBarChart(table)">
+      <component :is="chartName" :chart-data="dataForBarChart(table)"></component>
+      <!-- <BarChart v-if="table.componentName === '長條圖'" :chart-data="dataForBarChart(table)">
         Chart couldn't be loaded.
-      </BarChart>
+      </BarChart> -->
     </template>
   </v-container>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, markRaw } from 'vue'
 import { useDataStore } from '@/stores/data'
+import BarChart from '@/components/BarChart.vue'
+
 const datas = useDataStore()
-const content = ref(null)
+const chartName = ref(null)
+chartName.value = markRaw(BarChart)
 
 const dataForBarChart = (table) => {
   return {

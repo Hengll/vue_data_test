@@ -42,4 +42,8 @@ export const useDataStore = defineStore('data', {
       })
     },
   },
+  persist: {
+    key: 'dataSelect',
+    pick: ['dataSelect']
+  }
 })
